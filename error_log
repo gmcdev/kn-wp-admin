@@ -1,0 +1,12 @@
+[14-Jul-2023 17:31:43 UTC] PHP Warning:  include(): Failed opening '/home2/kingnitr/public_html/site/wp-content/plugins/wordpress-seo/vendor/composer/../../inc/sitemaps/class-post-type-sitemap-provider.php' for inclusion (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home2/kingnitr/public_html/site/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/ClassLoader.php on line 582
+[14-Jul-2023 17:31:43 UTC] PHP Fatal error:  Uncaught Error: Class "WPSEO_Post_Type_Sitemap_Provider" not found in /home2/kingnitr/public_html/site/wp-content/plugins/wordpress-seo/inc/sitemaps/class-sitemaps.php:122
+Stack trace:
+#0 /home2/kingnitr/public_html/site/wp-includes/class-wp-hook.php(308): WPSEO_Sitemaps->init_sitemaps_providers('')
+#1 /home2/kingnitr/public_html/site/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /home2/kingnitr/public_html/site/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home2/kingnitr/public_html/site/wp-settings.php(601): do_action('after_setup_the...')
+#4 /home2/kingnitr/public_html/site/wp-config.php(101): require_once('/home2/kingnitr...')
+#5 /home2/kingnitr/public_html/site/wp-load.php(50): require_once('/home2/kingnitr...')
+#6 /home2/kingnitr/public_html/site/wp-cron.php(46): require_once('/home2/kingnitr...')
+#7 {main}
+  thrown in /home2/kingnitr/public_html/site/wp-content/plugins/wordpress-seo/inc/sitemaps/class-sitemaps.php on line 122
